@@ -18,7 +18,9 @@ function Header() {
           <li className='headerLink'>My List</li>
         </ul>
       </div>
-      <div></div>
+      <div>
+          
+      </div>
     </header>
   )
 }
