@@ -1,13 +1,34 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../components/Header';
-import Banner from '../components/Banner';
-import requests from '../utils/requests';
+import Header from '../components/Header'
+import Banner from '../components/Banner'
+import requests from '../utils/requests'
+import { Movie } from '../typings'
 
-const Home = ({ netflixOriginals }) => {
-  console.log(netflixOriginals);
-  
+interface Props {
+  netflixOriginals: Movie[]
+  trendingNow: Movie[]
+  topRated: Movie[]
+  actionMovies: Movie[]
+  comedyMovies: Movie[]
+  horrorMovies: Movie[]
+  romanceMovies: Movie[]
+  documentaries: Movie[]
+}
+
+const Home = ({
+  netflixOriginals,
+  trendingNow,
+  topRated,
+  actionMovies,
+  comedyMovies,
+  horrorMovies,
+  romanceMovies,
+  documentaries,
+}: Props) => {
+  console.log(netflixOriginals)
+
   return (
     <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
       <Head>
@@ -17,11 +38,9 @@ const Home = ({ netflixOriginals }) => {
       <Header />
       <main>
         <Banner />
-         <section>
-           {/* Rows */}
-         </section>
+        <section>{/* Rows */}</section>
       </main>
-        {/* Modal */}
+      {/* Modal */}
     </div>
   )
 }
