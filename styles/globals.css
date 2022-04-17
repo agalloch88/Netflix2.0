@@ -9,7 +9,7 @@
     }
 
     header {
-        @apply fixed  top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6
+        @apply fixed  top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
     }
 }
 
@@ -20,6 +20,10 @@
     }
 
     .bannerButton {
-        @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl
+        @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+    }
+
+    .input {
+        @apply w-full rounded  bg-[#333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
     }
 }
