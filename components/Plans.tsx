@@ -47,6 +47,13 @@ function Plans() {
             your plan anytime.
           </li>
         </ul>
+        <div>
+          <div>
+            <div className='planBox'>
+                standard
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   )
