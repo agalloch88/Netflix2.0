@@ -83,14 +83,14 @@ function Modal() {
               <button className="modalButton">
                 <ThumbUpIcon className="h-7 w-7" />
               </button>
+              <button className="modalButton" onClick={() => setMuted(!muted)}>
+                {muted ? (
+                  <VolumeOffIcon className="h-6 w-6" />
+                ) : (
+                  <VolumeUpIcon className="h-6 w-6" />
+                )}
+              </button>
             </div>
-            <button className="modalButton" onClick={() => setMuted(!muted)}>
-              {muted ? (
-                <VolumeOffIcon className="h-6 w-6" />
-              ) : (
-                <VolumeUpIcon className="h-6 w-6" />
-              )}
-            </button>
           </div>
         </div>
         <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
