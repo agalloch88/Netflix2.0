@@ -12,7 +12,9 @@ function Modal() {
 
   return (
     <MuiModal open={showModal} onClose={handleClose}>
-      <>Modal</>
+      <>
+      
+      </>
     </MuiModal>
   )
 }
